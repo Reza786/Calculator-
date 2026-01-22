@@ -1,0 +1,210 @@
+h1 {
+  text-align: center;
+  /* font-family: "Big Dealer", sans-serif; */
+  font-family: "TwiggyPop", sans-serif;
+  font-family: "TwiggyPopScratch", sans-serif;
+}
+
+.container {
+  height: 80vh;
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  border-radius: 18px;
+  border: 2px solid grey;
+  text-align: center;
+  align-items: centers;
+  /* justify-content: space-around; */
+  /* margin-top: calc(99vh-70vh); */
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.663);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.output {
+  /* height: 15vh; */
+  padding: 20px 0px;
+  width: 90%;
+  background-color: rgba(252, 248, 248, 0.347);
+  /* padding: auto; */
+  margin: auto;
+  border-radius: 18px;
+  font-size: 3.5rem;
+  color: black;
+  align-content: center;
+  text-align: right;
+  /* margin-right: 20px; */
+  overflow-x: scroll;
+  /* padding-right: 20px; */
+  /* margin: 20px; */
+  /* -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+     */
+}
+
+.functions,
+.numbers,
+.numbers2,
+.numbers3,
+.numbers4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.numbers4 {
+  margin-bottom: 1rem;
+}
+
+button {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 18px;
+  color: black;
+  font-size: 2rem;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.2s ease;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#equal,
+#red {
+  background-color: rgb(233, 135, 100);
+  color: white;
+}
+
+#equal:hover,
+#red:hover {
+  background-color: rgb(243, 39, 59);
+}
+
+#operations {
+  background-color: rgb(234, 155, 168);
+  color: black;
+}
+
+#operations:hover {
+  color: white;
+  background-color: rgb(227, 85, 109);
+}
+
+/* .functions:hover{
+    background-color: aqua;
+} */
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
+    width: 70vw;
+    height: 50vh;
+  }
+
+  .output {
+    height: auto;
+    font-size: 1.5rem;
+  }
+
+  button {
+    height: 3rem;
+    width: 3rem;
+    font-size: 2.5rem;
+  }
+
+  .functions,
+  .numbers,
+  .numbers2,
+  .numbers3,
+  .numbers4 {
+    gap: 10px;
+    margin-top: 0.5rem;
+  }
+
+  .numbers4 {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    width: 60vw;
+    height: 40vh;
+  }
+
+  .output {
+    font-size: 2rem;
+    padding: 10px;
+    height: auto;
+  }
+
+  button {
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 50vw;
+    height: 30vh;
+  }
+
+  .output {
+    height: auto;
+    font-size: 1.8rem;
+  }
+
+  button {
+    height: 2rem;
+    width: 2rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .container {
+    width: 40vw;
+    height: 30vh;
+  }
+
+  .output {
+    font-size: 1.5rem;
+    padding: 8px;
+    height: auto;
+  }
+
+  button {
+    height: 1.8rem;
+    width: 1.8rem;
+    font-size: 1.2rem;
+  }
+
+  .functions,
+  .numbers,
+  .numbers2,
+  .numbers3,
+  .numbers4 {
+    margin-top: 0.3rem;
+  }
+
+  .numbers4 {
+    margin-bottom: 0.3rem;
+  }
+}
+
+/* @-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+} */
